@@ -1,0 +1,122 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+}
+.chart { 
+  width: 100%;
+  height: 550px;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+}    
+.select select {
+  font-family: 'Arial';
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #444444;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+    color: #000000;
+    background: #fff;
+}
+.select select:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+.select_arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0px;
+  height: 0px;
+  border: solid #7b7b7b;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
+
+
+table.blueTable {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 8px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable td.column__number {  
+  text-align: right;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable thead {
+  background: #1C6EA4;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+table.blueTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
